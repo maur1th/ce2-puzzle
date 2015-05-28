@@ -18,7 +18,7 @@ def solve(eq, permutations):
         try:
             result = evaluate(eq, permutation)
         except ZeroDivisionError:
-            result = None
+            continue
         if result == 0:
             return permutation
 
